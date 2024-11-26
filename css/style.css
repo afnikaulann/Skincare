@@ -180,6 +180,15 @@ img.animated.pulse {
     margin-bottom: 50px; /* Memberikan jarak antar kotak gambar secara vertikal */
 }
 
+/* Mengatur kotak utama */
+.feature-item {
+    position: relative;
+    overflow: hidden; /* Mencegah gambar melampaui kotak */
+    border-radius: 10px; /* Membuat sudut membulat */
+    height: 250px; /* Sesuaikan dengan tinggi yang diinginkan */
+    margin-bottom: 50px; /* Memberikan jarak antar kotak gambar secara vertikal */
+}
+
 /* Gambar latar belakang */
 .feature-item .feature-bg {
     position: absolute;
@@ -191,44 +200,57 @@ img.animated.pulse {
     z-index: 0; /* Gambar di belakang konten */
 }
 
+
 /* Jarak antar kolom (opsional untuk versi responsif) */
 .row {
     margin-bottom: 20px; /* Memberikan jarak antara baris jika ada lebih dari satu baris */
 }
 
-
-
-/*** Deal ***/
-.deal {
+/* Styling untuk slider full-width */
+.slider {
     position: relative;
-    background: url(../img/bg.png) center center no-repeat;
-    background-size: cover;
-}
+    width: 100%; /* Slider akan menyesuaikan dengan lebar layar */
+    height: 500px; /* Ketinggian slider */
+    overflow: hidden; /* Menyembunyikan bagian gambar di luar kontainer */
+    margin-top: 100px; /* Tambahkan jarak 20px dari elemen di atasnya */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opsional: Tambahkan bayangan agar slider lebih menonjol */
+  }
+  
+  .slides {
+    display: flex;
+    width: 500%; /* Total width = jumlah gambar x 100% */
+    animation: slide-animation 360s infinite; /* Total waktu animasi */
+  }
+  .slider {
+    margin-top: 50px; /* Tambahkan jarak 20px */
+  }
+  .slides img {
+    flex: 1 0 auto; /* Setiap gambar mengambil 100% dari lebar slider */
+    width: 5%; /* Gambar memenuhi lebar slide */
+    height: 700px; /* Tinggi gambar sesuai kontainer slider */
+    object-fit: cover; /* Agar gambar tidak terdistorsi */
+  }
 
-.deal::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: #31d2f2;
-    clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
-}
-
-.deal .bg-white {
-    position: relative;
-    z-index: 1;
-}
-
-.deal .cdt span {
-    display: block;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 200;
-    text-transform: capitalize;
-}
-
+  
+  /* Animasi */
+@keyframes slide-animation {
+    0% {
+      transform: translateX(0); /* Slide pertama */
+    }
+    33.33% {
+      transform: translateX(-100%); /* Geser ke slide kedua */
+    }
+    66.66% {
+      transform: translateX(-200%); /* Geser ke slide ketiga */
+    }
+    83.33% {
+      transform: translateX(-100%); /* Kembali ke slide kedua */
+    }
+    100% {
+      transform: translateX(0); /* Kembali ke slide pertama */
+    }
+  }
+  
 
 /*** How To Use ***/
 .how-to-use {
@@ -258,19 +280,81 @@ img.animated.pulse {
 }
 
 
-/*** Product ***/
-.product-item {
-    transition: .1s;
+/* Mengatur kotak utama */
+.feature-item {
+    position: relative;
+    overflow: hidden; /* Mencegah gambar melampaui kotak */
+    border-radius: 10px; /* Membuat sudut membulat */
+    height: 250px; /* Sesuaikan dengan tinggi yang diinginkan */
+    margin-bottom: 50px; /* Memberikan jarak antar kotak gambar secara vertikal */
 }
 
-.product-item:hover {
-    border-width: 0 !important;
-    box-shadow: #31d2f2;
+/* Gambar latar belakang */
+.feature-item .feature-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Membuat gambar memenuhi area kotak tanpa terdistorsi */
+    z-index: 0; /* Gambar di belakang konten */
 }
 
-.product-item:hover a.btn {
-    color: var(--bs-white);
-    background: #ffffff ;
+
+/* Jarak antar kolom (opsional untuk versi responsif) */
+.row {
+    margin-bottom: 20px; /* Memberikan jarak antara baris jika ada lebih dari satu baris */
+}
+
+
+/* Container untuk kategori */
+.shop-category {
+    text-align: center;
+    background-color: #e7f7fc; /* Warna latar belakang */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.shop-category h1 {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Grid untuk kategori */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.category-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.category-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.category-item p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
 }
 
 
