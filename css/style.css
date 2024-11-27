@@ -247,34 +247,52 @@ img.animated.pulse {
     }
 }
 
+.custom-check {
+    color: #31d2f2; /* Hijau */
+}
 
-  
+  .new-arrival {
+    color: #000000; /* Ganti dengan warna yang kamu inginkan */
+}
+/* Mengubah warna ikon check */
+.fa-check {
+    color: #31d2f2; /* Ganti dengan warna yang kamu inginkan */
+}
+
 
 /*** How To Use ***/
-.how-to-use {
-    position: relative;
-    background: url(../img/bg.png) center center no-repeat;
-    background-size: cover;
+.features-section {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #ffffff;
+    padding-bottom: 10px; /* Kurangi padding bawah */
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 0px; /* Mengurangi jarak dengan elemen di bawahnya */
 }
 
-.how-to-use::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(255, 255, 255, .1);
-    clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
+.feature-item {
+    max-width: 300px;
+    margin-bottom: 10px; /* Atur jarak antar elemen */
 }
 
-.how-to-use .container {
-    position: relative;
-    z-index: 1;
+.feature-icon img {
+    display: block;
+    margin: 0 auto 5px; /* Kurangi margin bawah gambar */
 }
 
-.how-to-use .border {
-    border-color: rgba(255, 255, 255, .2) !important;
+.feature-item h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0px 0 5px; /* Kurangi margin bawah judul */
+    color: #000;
+}
+
+.feature-item p {
+    font-size: 0.9rem;
+    margin: 0px 0 5px; /* Kurangi margin bawah paragraf */
+    color: #333;
 }
 
 
@@ -354,6 +372,7 @@ img.animated.pulse {
     color: #333;
     margin: 0;
 }
+
 
 
 /*** Testimonial ***/
