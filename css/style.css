@@ -263,37 +263,24 @@ img.animated.pulse {
 /*** How To Use ***/
 .features-section {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
-    background-color: #ffffff;
-    padding-bottom: 10px; /* Kurangi padding bawah */
-    border-top: 1px solid #e0e0e0;
-    border-bottom: 1px solid #e0e0e0;
-    margin-bottom: 0px; /* Mengurangi jarak dengan elemen di bawahnya */
+    gap: 30px; /* Menambah jarak antar fitur */
+    padding: 0 50px; /* Memberi ruang kiri dan kanan */
+    border-top: 5px solid #e0e0e0; /* Garis atas */
+    border-bottom: 2px solid #e0e0e0; /* Garis bawah */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    min-height: 50px; /* Menentukan tinggi minimum */
 }
+
 
 .feature-item {
-    max-width: 300px;
-    margin-bottom: 10px; /* Atur jarak antar elemen */
+    margin: 0 20px; /* Jarak antar elemen individual */
 }
 
-.feature-icon img {
-    display: block;
-    margin: 0 auto 5px; /* Kurangi margin bawah gambar */
-}
-
-.feature-item h4 {
-    font-size: 1rem;
-    font-weight: bold;
-    margin: 0px 0 5px; /* Kurangi margin bawah judul */
-    color: #000;
-}
-
-.feature-item p {
-    font-size: 0.9rem;
-    margin: 0px 0 5px; /* Kurangi margin bawah paragraf */
-    color: #333;
-}
 
 
 /* Mengatur kotak utama */
@@ -432,20 +419,19 @@ img.animated.pulse {
     background: var(--bs-dark);
 }
 
-
-/*** Blog ***/
-.blog-item {
-    transition: .1s;
+/* CSS untuk Testimonial Section */
+.testimonial {
+    background-color: #e7f7fc; /* Warna latar belakang */
+    padding: 40px 20px; /* Atur padding sesuai kebutuhan */
+    text-align: center; /* Jika ingin teks berada di tengah */
+}
+.title-primary {
+    color: #060606; /* Warna oranye */
 }
 
-.blog-item:hover {
-    border-width: 0 !important;
-    box-shadow: 0 0 35px rgba(126, 141, 255, 0.826)
-}
-
-.blog-item:hover a.btn {
-    color: var(--bs-white);
-    background: #31d2f2;
+.title-secondary {
+    color: #31d2f2; /* Warna biru baja */
+    font-weight: 300; /* Font lebih ringan */
 }
 
 
@@ -547,4 +533,7 @@ img.animated.pulse {
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+.text-primary {
+    color: #FF6347; /* Warna oranye */
 }
