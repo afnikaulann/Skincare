@@ -76,7 +76,7 @@ img.animated.pulse {
 .navbar .navbar-nav .nav-link {
     margin-right: 45px;
     padding: 0;
-    color: #ffffff;
+    color: #000000;
     font-weight: 500;
     transition: .5s;
     outline: none;
@@ -99,7 +99,7 @@ img.animated.pulse {
 @media (max-width: 991.98px) {
     .navbar .navbar-nav {
         padding: 0 15px;
-        background: var(#ffffff);
+        background: var(#000000);
     }
 
     .navbar .navbar-nav .nav-link  {
@@ -128,34 +128,27 @@ img.animated.pulse {
 }
 
 
-/*** Hero Header ***/
 .hero-header {
     position: relative;
-    margin-top: -85px;
-    padding-top: 12rem;
-    padding-bottom: 6rem;
-    background-color: #31d2f2; /* Background biru */
-    background-size: cover;
+    height: 100vh; /* Tinggi 100% dari layar pengguna */
+    margin-top: 0; /* Menghilangkan jarak antara navbar dan container */
+    overflow: hidden; /* Menyembunyikan bagian gambar yang keluar dari kontainer */
 }
 
-.hero-header:before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: #31d2f2; /* Background biru */
+.photo-container {
+    width: 100%; /* Pastikan lebar container menutupi seluruh area */
+    height: 100%; /* Pastikan tinggi container mengisi penuh */
+    padding: 0; /* Menghilangkan padding untuk menghindari jarak tambahan */
+    margin-top: 0; /* Menghilangkan jarak tambahan */
 }
 
-.hero-header .container {
-    position: relative;
-    z-index: 1;
+.hero-header img {
+    width: 100%; /* Memastikan gambar memenuhi lebar kontainer */
+    height: 100%; /* Memastikan gambar memenuhi tinggi kontainer */
+    object-fit: cover; /* Memastikan gambar mengisi penuh kontainer tanpa terdistorsi */
 }
 
-.hero-header .breadcrumb-item+.breadcrumb-item::before {
-    background-color: #ffffff ;
-}
+
 /* CSS untuk mengedit gambar */
 .col-lg-6 img {
     width: 100%; /* Membuat gambar responsif dan menyesuaikan lebar kontainer */
@@ -422,7 +415,7 @@ img.animated.pulse {
 /* CSS untuk Testimonial Section */
 .testimonial {
     background-color: #e7f7fc; /* Warna latar belakang */
-    padding: 40px 20px; /* Atur padding sesuai kebutuhan */
+    padding: 20px 20px; /* Atur padding sesuai kebutuhan */
     text-align: center; /* Jika ingin teks berada di tengah */
 }
 .title-primary {
@@ -468,7 +461,7 @@ img.animated.pulse {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgb(108, 169, 255);
+    background: rgb(255, 255, 255);
     clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
 }
 
@@ -479,6 +472,10 @@ img.animated.pulse {
 
 .newsletter .form-control {
     background: rgba(255, 255, 255, .3);
+}
+.newsletter {
+    background-color: #ffffff; /* Warna putih */
+    color: #000000; /* Ubah warna teks jika perlu agar kontras dengan latar putih */
 }
 
 
