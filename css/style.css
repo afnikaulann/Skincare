@@ -146,7 +146,8 @@ img.animated.pulse {
     width: 100%; /* Memastikan gambar memenuhi lebar kontainer */
     height: 100%; /* Memastikan gambar memenuhi tinggi kontainer */
     object-fit: cover; /* Memastikan gambar mengisi penuh kontainer tanpa terdistorsi */
-}
+    margin-bottom: 40px; /* Tambahkan jarak bawah untuk memberi ruang */
+}   
 
 
 /* CSS untuk mengedit gambar */
@@ -309,6 +310,7 @@ img.animated.pulse {
     background-color: #e7f7fc; /* Warna latar belakang */
     padding: 20px;
     border-radius: 10px;
+    margin-top: 100px; /* Tambahkan jarak dari navbar 
 }
 
 .shop-category h1 {
