@@ -163,7 +163,19 @@ img.animated.pulse {
 .col-lg-6 img:hover {
     transform: scale(1); /* Memperbesar gambar sedikit saat di-hover */
 }
-
+    /*teks customer favorite*/
+    .text-pink {
+        font-size: 36px; /* Ukuran font */
+        font-weight: bold; /* Membuat teks utama lebih tebal */
+        color: #ff69b4; /* Warna pink (HotPink) */
+        margin-bottom: 20px; /* Memberikan jarak di bawah judul */
+    }
+    
+    h1 .fw-light.text-dark {
+        font-weight: lighter; /* Membuat teks 'Customer' lebih tipis */
+        color: #000; /* Warna hitam untuk 'Customer' */
+    }
+    
 
 /* Mengatur kotak utama */
 .feature-item {
@@ -200,46 +212,110 @@ img.animated.pulse {
     margin-bottom: 20px; /* Memberikan jarak antara baris jika ada lebih dari satu baris */
 }
 
+/* Kontainer gambar */
+.product-img {
+    position: relative;
+    overflow: hidden;
+    padding: 0; /* Menghapus padding default */
+}
+
+/* Memastikan gambar responsif dan sesuai ukuran */
+.product-img img {
+    width: 100%;
+    height: 450px; /* Menyesuaikan tinggi gambar */
+    object-fit: contain; /* Agar gambar mengisi kontainer dengan proporsi yang baik */
+    border: none; /* Menghilangkan border */
+    border-radius: 0; /* Menghilangkan efek lengkungan border */
+}
+
+/* Pengaturan teks untuk section-title */
+.section-title {
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 0; /* Menghapus margin atas untuk mendekatkan container */
+
+}
+
+/* Pengaturan padding untuk section-title */
+.section-title {
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #ff69b4;
+    text-align: center; /* Teks berada di tengah */
+}
+
+.section-title::before,
+.section-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 15%; /* Menentukan panjang garis */
+    height: 2px; /* Ketebalan garis */
+    background-color: #ff69b4; /* Warna garis */
+    transform: translateY(-50%); /* Menyeimbangkan garis di tengah vertikal */
+}
+
+.section-title::before {
+    left: -4%; /* Garis di kiri, agak keluar dari container */
+}
+
+.section-title::after {
+    right: -4%; /* Garis di kanan, agak keluar dari container */
+}
+
+.section-title span {
+    padding: 0 10px; /* Memberikan jarak antara teks dan garis */
+}
+
+.container-fluid.pt-5 {
+    margin-top: -15px; /* Menghapus margin atas untuk mendekatkan container */
+}
+
+/* Styling untuk slider full-width */
 /* Styling untuk slider full-width */
 .slider {
     position: relative;
     width: 100%; /* Slider akan menyesuaikan dengan lebar layar */
-    height: 500px; /* Ketinggian slider */
+    height: 600px; /* Ketinggian slider */
     overflow: hidden; /* Menyembunyikan bagian gambar di luar kontainer */
-    margin-top: 100px; /* Tambahkan jarak 20px dari elemen di atasnya */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opsional: Tambahkan bayangan agar slider lebih menonjol */
-  }
-  
-  .slides {
-    display: flex;
-    width: 300%; /* Total width = jumlah gambar x 100% */
-    animation: slide-animation 380s infinite; /* Total waktu animasi */
-  }
-  .slider {
-    margin-top: 50px; /* Tambahkan jarak 20px */
-  }
-  .slides img {
-    flex: 1 0 auto; /* Setiap gambar mengambil 100% dari lebar slider */
-    width: 5%; /* Gambar memenuhi lebar slide */
-    height: 700px; /* Tinggi gambar sesuai kontainer slider */
-    object-fit: contain; /* Gambar menyesuaikan tanpa dipotong */
-  }
+    background: none; /* Menghilangkan latar belakang */
+    box-shadow: none; /* Menghapus bayangan */
+}
 
-  
-  @keyframes slide-animation {
+.slides {
+    display: flex;
+    width: 300%; /* Total lebar = jumlah gambar x 100% */
+    animation: slide-animation 23s ease-in-out infinite; /* Durasi animasi total 15 detik */
+}
+
+.slides img {
+    flex: 1 0 auto; /* Setiap gambar mengambil 100% dari lebar slider */
+    width: 33.33%; /* Membuat gambar pertama, kedua, dan ketiga berada dalam satu baris */
+    height: 600px; /* Tinggi gambar sesuai kontainer slider */
+    object-fit: contain; /* Gambar menyesuaikan tanpa ruang kosong */
+}
+
+/* Animasi slide */
+@keyframes slide-animation {
     0% {
-        transform: translateX(0); /* Slide pertama */
+        transform: translateX(0); /* Posisi awal: gambar pertama muncul */
+    }
+    20% {
+        transform: translateX(0); /* Gambar pertama tetap muncul pada awal */
     }
     33.33% {
-        transform: translateX(-100%); /* Slide kedua */
+        transform: translateX(-33.33%); /* Geser ke gambar kedua */
     }
     66.66% {
-        transform: translateX(-200%); /* Slide ketiga */
+        transform: translateX(-66.66%); /* Geser ke gambar ketiga */
     }
     100% {
-        transform: translateX(-200%); /* Tetap di slide ketiga */
+        transform: translateX(0); /* Kembali ke posisi gambar pertama tanpa celah kosong */
     }
 }
+
 
 .custom-check {
     color: #31d2f2; /* Hijau */
@@ -303,57 +379,6 @@ img.animated.pulse {
     margin-bottom: 20px; /* Memberikan jarak antara baris jika ada lebih dari satu baris */
 }
 
-
-/* Container untuk kategori */
-.shop-category {
-    text-align: center;
-    background-color: #e7f7fc; /* Warna latar belakang */
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 100px; /* Tambahkan jarak dari navbar 
-}
-
-.shop-category h1 {
-    font-size: 24px;
-    color: #000;
-    margin-bottom: 20px;
-}
-
-/* Grid untuk kategori */
-.category-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-items: center;
-}
-
-.category-item {
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.category-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-.category-item img {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-    margin-bottom: 10px;
-}
-
-.category-item p {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-    margin: 0;
-}
 
 
 
