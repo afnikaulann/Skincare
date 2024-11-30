@@ -62,6 +62,12 @@ img.animated.pulse {
 }
 
 
+.navbar-brand h2 {
+    color: #ff8ef7; /* Warna pink */
+    font-family: 'monserrat', serif;
+    font-size: 40px;
+}
+
 /*** Navbar ***/
 .sticky-top {
     top: -150px;
@@ -347,7 +353,7 @@ img.animated.pulse {
     position: absolute;
     width: 100%; /* Panjang garis */
     height: 2px; /* Ketebalan garis */
-    background-color: #ff8ef7; /* Warna garis */
+    background-color: #cac1ca; /* Warna garis */
     left: 0; /* Mulai dari kiri */
 }
 
@@ -396,6 +402,12 @@ img.animated.pulse {
     background: url(../img/bg.png) center center no-repeat;
     background-size: cover;
 }
+.newsletter {
+    margin-top: 100px; /* Mengurangi jarak dari atas */
+    margin-bottom: -40px; /* Mengurangi jarak dari bawah */
+    padding-top: 40px; /* Padding top untuk menjaga tampilan */
+    padding-bottom: 40px; /* Padding bottom agar tetap enak dipandang */
+}
 
 .newsletter::before {
     position: absolute;
@@ -404,7 +416,7 @@ img.animated.pulse {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgb(255, 255, 255);
+    background: rgb(255, 228, 250);
     clip-path: polygon(66% 0, 100% 0, 100% 100%, 33% 100%);
 }
 
@@ -418,7 +430,7 @@ img.animated.pulse {
     background: rgba(255, 255, 255, .3);
 }
 .newsletter {
-    background-color: #ffffff; /* Warna putih */
+    background-color: #f2f2f2; /* Warna putih */
     color: #000000; /* Ubah warna teks jika perlu agar kontras dengan latar putih */
 }
 .previous-container {
