@@ -495,29 +495,6 @@ img.animated.pulse {
     color: #ffffff; /* Warna oranye */
 }
 
-header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-}
-
-header {
-    background: #ffffff; /* Warna header yang menarik */
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; /* Menambahkan jarak di bawah header */
-}
 
 header h1 {
     margin: 20px;
