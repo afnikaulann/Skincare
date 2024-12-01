@@ -492,7 +492,7 @@ img.animated.pulse {
     border-right: none;
 }
 .text-primary {
-    color: #FF6347; /* Warna oranye */
+    color: #ffffff; /* Warna oranye */
 }
 
 header {
@@ -511,7 +511,7 @@ body {
 }
 
 header {
-    background: #ff6f61; /* Warna header yang menarik */
+    background: #ffffff; /* Warna header yang menarik */
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
