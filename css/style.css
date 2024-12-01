@@ -524,16 +524,13 @@ header h1 {
     text-align: center;
 }
 
-.image-container img {
-    width: 300px; /* Ukuran lebar gambar */
-    height: 200px; /* Ukuran tinggi gambar */
-    border-radius: 8px;
-    object-fit: cover;
-    margin: 0 auto; /* Membuat gambar berada di tengah */
+.image-container {
+    text-align: center;
+    margin: 20px 0;
 }
 
 .image-container img {
-    max-width: 50%; /* Mengurangi lebar maksimum gambar */
+    max-width: 80%; /* Mengurangi lebar maksimum gambar */
     height: auto;
     border-radius: 8px;
     object-fit: cover; /* Perbaiki typo dari 'over' menjadi 'cover' */
