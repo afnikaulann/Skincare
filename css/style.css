@@ -353,7 +353,7 @@ img.animated.pulse {
     position: absolute;
     width: 100%; /* Panjang garis */
     height: 2px; /* Ketebalan garis */
-    background-color: #cac1ca; /* Warna garis */
+    background-color: #f5f5f5; /* Warna garis */
     left: 0; /* Mulai dari kiri */
 }
 
@@ -493,4 +493,61 @@ img.animated.pulse {
 }
 .text-primary {
     color: #FF6347; /* Warna oranye */
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background: #ff6f61; /* Warna header yang menarik */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Menambahkan jarak di bawah header */
+}
+
+header h1 {
+    margin: 20px;
+    text-align: center;
+}
+
+.image-container img {
+    width: 300px; /* Ukuran lebar gambar */
+    height: 200px; /* Ukuran tinggi gambar */
+    border-radius: 8px;
+    object-fit: cover;
+    margin: 0 auto; /* Membuat gambar berada di tengah */
+}
+
+.image-container img {
+    max-width: 50%; /* Mengurangi lebar maksimum gambar */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* Perbaiki typo dari 'over' menjadi 'cover' */
+}
+
+.about-section {
+    padding: 20px;
+    background: #ffffff;
+    margin: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.about-section h2 {
+    color: #35424a;
+
 }
