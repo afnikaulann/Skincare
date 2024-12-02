@@ -579,6 +579,7 @@ textarea {
     border-radius: 5px;
     margin-bottom: 15px; /* Jarak antara elemen */
     transition: border-color 0.3s; /* Efek transisi saat fokus */
+    color: #000000;
 }
 
 input[type="text"]:focus,
