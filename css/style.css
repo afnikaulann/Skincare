@@ -552,7 +552,7 @@ body {
 header {
     text-align: center; /* Menengahkan teks dalam header */
     padding: 20px 0; /* Padding vertikal */
-    background-color: #007bff; /* Warna latar belakang */
+    background-color: #ffffff; /* Warna latar belakang */
     color: white; /* Warna teks */
 }
 
@@ -620,7 +620,7 @@ textarea:focus {
 /* Tombol Kirim Pesan */
 .submit-button {
     background-color: #c6287c89; /* Warna latar belakang biru */
-    color: rgb(255, 0, 225); /* Warna teks putih */
+    color: rgb(0, 0, 0); /* Warna teks putih */
     border: none; /* Tanpa border */
     padding: 10px 15px; /* Padding */
     border-radius: 5px; /* Sudut membulat */
@@ -635,12 +635,17 @@ textarea:focus {
 }
 
 /* Map Container */
-.map-container {
-    margin-top: 20px;
-    width: 100%; /* Memastikan elemen mengambil seluruh lebar */
-    height: 100vh; /* Mengatur tinggi elemen menjadi 100% dari tinggi viewport */
-    padding: 0; /* Menghapus padding jika ada */
-    margin: 0; /* Menghapus margin default */
+.map {
+    width: 100%; /* Memastikan elemen container mengambil seluruh lebar layar */
+    height: 100vh; /* Tinggi elemen container mengikuti tinggi layar */
+    margin: 0;
+    padding: 0;
+}
+
+.map iframe {
+    width: 100%; /* Lebar iframe mengikuti lebar container */
+    height: 100%; /* Tinggi iframe mengikuti tinggi container */
+    border: 0; /* Menghilangkan border default iframe */
 }
 
 
