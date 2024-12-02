@@ -563,6 +563,7 @@ main {
     border: 1px solid #ced4da; /* Border untuk item */
     border-radius: 5px; /* Sudut membulat */
     background-color: #ff69b4; /* Warna latar belakang item */
+    color: #ffffff;
 }
 
 .info-item h3 {
@@ -589,7 +590,7 @@ textarea:focus {
 
 /* Tombol Kirim Pesan */
 .submit-button {
-    background-color: #c6287c89; /* Warna latar belakang biru */
+    background-color: #ff69b4; /* Warna latar belakang biru */
     color: rgb(0, 0, 0); /* Warna teks putih */
     border: none; /* Tanpa border */
     padding: 10px 15px; /* Padding */
