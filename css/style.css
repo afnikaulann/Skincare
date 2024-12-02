@@ -563,7 +563,7 @@ main {
     border: 1px solid #ced4da; /* Border untuk item */
     border-radius: 5px; /* Sudut membulat */
     background-color: #ff69b4; /* Warna latar belakang item */
-    color: #ffffff;
+    color: #ececec;
 }
 
 .info-item h3 {
