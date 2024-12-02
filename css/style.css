@@ -628,3 +628,9 @@ footer {
     background-color: #343a40; /* Warna gelap untuk footer */
     color: white; /* Warna teks putih */
 }
+.btn-custom {
+    width: 200px; /* Atur lebar tombol */
+    height: 50px; /* Atur tinggi tombol */
+    display: inline-block; /* Agar tombol berada di satu posisi */
+    margin-top: 20px; /* Jarak atas tombol dari elemen sebelumnya */
+}
